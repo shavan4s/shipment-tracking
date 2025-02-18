@@ -1,0 +1,58 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #252525;
+  background-color: #f0f0f0;
+}
+
+/* Typography */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Layout */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Components */
+#l-map {
+  height: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Leaflet Overrides */
+.leaflet-popup-content-wrapper {
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.leaflet-popup-tip-container {
+  display: none;
+}
+
+/* Remove these rules */
+.cargo-marker,
+.destination-marker {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.cargo-marker {
+  background-color: red;
+}
+
+.destination-marker {
+  background-color: blue;
+}
